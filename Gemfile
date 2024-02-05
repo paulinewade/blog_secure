@@ -1,17 +1,19 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-#ruby "3.2.1"
 ruby "3.1.2"
+#ruby "2.7.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3"
+#gem "rails", "~> 6.1.2"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
+#gem "pg", "~> 12.5"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
@@ -90,3 +92,8 @@ gem 'yaml_db'
 
 gem 'brakeman'
 gem 'rubocop'
+
+gem 'devise'
+#gem 'omniauth'
+gem 'omniauth', '~>2.0'
+gem 'omniauth-google-oauth2'

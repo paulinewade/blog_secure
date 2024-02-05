@@ -34,5 +34,9 @@ module BuildBlog
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # config/application.rb
+    config.autoload_paths += %W(#{config.root}/app/javascript)   
+
   end
 end
