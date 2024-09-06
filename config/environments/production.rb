@@ -119,7 +119,6 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
   #CHANGE AND UNCOMMENT BEFORE DEPLOYING TO HEROKU
-  ENV['GOOGLE_OAUTH_CLIENT_ID'] = 'Your ID ‘
-  ENV['GOOGLE_OAUTH_CLIENT_SECRET'] = ' Your SECRET‘
+
 
 end
