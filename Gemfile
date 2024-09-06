@@ -16,13 +16,14 @@ gem "pg", "~> 1.1"
 #gem "pg", "~> 12.5"
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '>= 6'
+#gem 'sass-rails', '>= 6'
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker'
+#gem 'webpacker'
+#gem 'webpacker', '~> 5.0'
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+#gem 'turbolinks', '~> 5'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -48,13 +49,14 @@ gem "jbuilder"
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
-gem 'record_tag_helper'
+#gem 'record_tag_helper'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", '>=1.4.4', require: false
+#gem "bootsnap", '>=1.4.4', require: false
+gem 'bootsnap', require: false
 gem 'rexml'
 
 # Use Sass to process CSS
@@ -68,6 +70,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 #  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw ]
   gem 'rspec-rails'
+
 end
 
 group :development do
@@ -85,6 +88,7 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  gem 'simplecov', require: false
   gem "webdrivers"
 end
 
@@ -92,8 +96,12 @@ gem 'yaml_db'
 
 gem 'brakeman'
 gem 'rubocop'
+gem 'rubocop-performance'
+gem 'rubocop-rails'
+gem 'rubocop-rspec'
 
 gem 'devise'
-#gem 'omniauth'
-gem 'omniauth', '~>2.0'
+gem 'omniauth'
+#gem 'omniauth', '~>2.0'
 gem 'omniauth-google-oauth2'
+gem 'omniauth-rails_csrf_protection'
