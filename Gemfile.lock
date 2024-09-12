@@ -105,6 +105,7 @@ GEM
     faraday-net_http (3.1.0)
       net-http
     ffi (1.15.5)
+    ffi (1.15.5-x64-mingw-ucrt)
     globalid (1.2.1)
       activesupport (>= 6.1)
     hashie (5.0.0)
@@ -227,6 +228,8 @@ GEM
     rake (13.0.6)
     rdoc (6.5.0)
       psych (>= 4.0.0)
+    record_tag_helper (1.0.1)
+      actionview (>= 5)
     regexp_parser (2.8.1)
     reline (0.3.8)
       io-console (~> 0.5)
@@ -365,6 +368,7 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.3)
+  record_tag_helper (~> 1.0)
   rexml
   rspec-rails
   rubocop
